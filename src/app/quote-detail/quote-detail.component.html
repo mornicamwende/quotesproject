@@ -1,0 +1,7 @@
+<!-- <p>quote-detail works!</p> -->
+<p>{{quote.description}}</p>
+<p>Author:&nbsp;{{quote.author}}</p>
+<p>submited by: &nbsp;{{quote.submittedby}}</p>
+<!-- <button (click)= 'quoteComplete(true)'>Complete</button> -->
+<p>This quote was generated on {{quote.completeDate|dateCount}} days</p>
+<button (click)= 'quoteDelete(true)' class="btn btn-outline-danger">Delete quote</button>
