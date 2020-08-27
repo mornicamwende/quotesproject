@@ -17,6 +17,18 @@ export class QuoteDetailComponent implements OnInit {
     this.isComplete.emit(complete);
   }
 
+  // Upvotes and Downvotes
+  downvote=0;
+  upvote=0
+
+  voteDown(){
+    this.downvote=this.downvote+1
+  }
+
+  voteUp(){
+    this.upvote=this.upvote+1
+  }
+
   constructor() { }
 
   ngOnInit(): void {
